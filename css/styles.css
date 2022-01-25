@@ -8,7 +8,10 @@ body {
     min-height: 100vh;
     scroll-behavior: smooth;
     line-height: 1.5;
-    background-color: #262929;
+
+    /* background-image: url(../img/test3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
 
   img {
@@ -33,3 +36,108 @@ li[class]
     max-width: 1200px;
     margin: auto;
 }
+
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-bottom: 1px solid black;
+
+    padding: 4rem 0;
+}
+
+.header-title {
+    font-family: 'anton' ,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.2;
+
+}
+
+
+/* Page Title */
+.page-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 1rem 0;
+    padding: 1rem 0;
+
+}
+
+.page-title h2 {
+    font-family: 'anton' ,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+
+}
+
+
+
+/* Recipe Categories */
+
+.recipes-cat {
+
+    display: grid;
+    grid-template-columns: 1fr; 
+    place-items: center;
+
+    margin: 1rem 0;
+    padding: 1rem 0;
+
+}
+
+.cat-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    align-self: center;
+
+}
+
+.cat-list-item {
+    
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    text-align: center;
+
+
+    font-family: monospace;
+    font-weight: 400!important;
+    font-style: normal;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+
+}
+
+.cat-list-item:hover {
+    background-color: black;
+    color: white;
+}
+
+/* END Recipe Categories */
+
+
+/* Recipes */
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+/* END Recipes */
