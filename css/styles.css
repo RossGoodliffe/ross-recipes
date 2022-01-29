@@ -168,8 +168,18 @@ li
 
 }
 
+.recipe-item a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .recipe-item img:hover {
     opacity: 0.75;
+}
+
+.recipe-item-link a {
+    text-decoration: none;
 }
 
 .recipe-item-tags {
@@ -189,8 +199,18 @@ li
     color: #ECB94E;
     
 }
+.recipe-item-link h4:hover {
+    text-decoration: underline;
+}
 
 .recipe-item-name {
+    
+}
+
+
+
+.recipe-item-link h3:hover {
+    text-decoration: underline;
 }
 
 .recipe-item-name h3 {
